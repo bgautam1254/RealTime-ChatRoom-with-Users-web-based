@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* main body */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #F8F8F8;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* main section with its name */
+section.chatSection {
+    width: 800px;
+    /* for mobile screen--> max-width: 90%; */
+    max-width: 90%;
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* brand logo background */
+.brand {
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+/* brand text name and background */
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #444;
+    margin-left: 10px;
+}
+
+/* incoming and outgoing messages area */
+.messageArea {
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    /* all messages will come in column one after one */
+    flex-direction: column;
+    /* messages will automatically scroll 
+    if more messages are ther */
+    overflow-y: auto;
+    padding-top: 40px;
+}
+
+/* incoming messages background */
+.incoming {
+    background: #494949;
+    color: #ffffff;
+}
+
+/* outgoing messages background */
+.outgoing {
+    background: #437243;
+    color: #fff;
+    margin-left: auto;
+    width: 50%;
+}
+
+/* new user joind the chat background */
+.join {
+    background: #8df36f;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+/* old user left the chat background */
+.left {
+    background: #f18080;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    border: 3px solid #f54242;
+    padding: 10px;
+}
+
+/* incoming and outgoing messages area  */
+.message {
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+
+/* incoming and outgoing messages username */
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+
+/* area where we type message */
+textarea {
+    width: 85%;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #f1efef;
+}
+
+
+#sendit {
+    background-color: #e5e6e5de;
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#sendit:hover {
+    background-color: rgb(86, 231, 110);
+    color: rgb(0, 0, 0);
+}

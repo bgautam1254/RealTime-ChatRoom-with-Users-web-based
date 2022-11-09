@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- section with its name -->
+    <section class="chatSection">
+
+        <!-- Brand logo -->
+        <div class="brand">
+            <!-- brand logo background -->
+            <img height="40" src="/chatlogo.png" alt="">
+            <!-- brand text name and background -->
+            <h1>Welcome to Messaging Service</h1>
+        </div>
+
+        <!-- incoming and outgoing messages area -->
+        <div class="messageArea">
+
+            <!-- incoming messages area -->
+            <!-- incoming messages background -->
+            <div class="incoming message">
+                <!-- username -->
+                <h4>Gautam</h4>
+                <!-- user message -->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <!-- outgoing messages area -->
+            <!-- outgoing messages background -->
+            <div class="outgoing message">
+                <!-- username -->
+                <h4>Bharat</h4>
+                <!-- user message -->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+        </div>
+
+
+        <!-- area where we type message -->
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="whats on your mind..."></textarea>
+        </div>
+
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+
+</body>
+
+</html>
